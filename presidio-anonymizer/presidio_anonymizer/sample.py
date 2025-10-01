@@ -13,8 +13,8 @@ def sample_run_anonymizer(text, start, end):
         analyzer_results=[RecognizerResult(entity_type="PERSON", start=start, end= end, score=0.8)],
         operators={"PERSON": OperatorConfig("replace", {"new_value": "BIP"})}
     )
-
     print(result)
+    return result
 
     # input should be:
     # text: My name is Bond.
